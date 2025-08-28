@@ -4,14 +4,14 @@ def spell_check():
     # Initialize a counter for correctly spelled words
     correctly_spelled_words_count = 0
     
-    # Use a set for dictionary words for efficient membership testing (fast lookups) [Programming Challenges: Data, Control, and Algorithms, Challenge 2: Spell Checker - Key Concepts [1]; Hints and Guidance]
+    # Use a set for dictionary words for efficient membership testing (fast lookups)
     dictionary_words = set()
     
     dictionary_file_name = "dictionary.txt"
     mystery_file_name = "mystery-text.txt"
 
     # --- 1. Load the dictionary words ---
-    # File Processing (B2.5.1): Open and read the dictionary file [Programming Challenges: Data, Control, and Algorithms, Challenge 2: Spell Checker - Key Concepts].
+    # File Processing (B2.5.1): Open and read the dictionary file 
     try:
         with open(dictionary_file_name, 'r', encoding='utf-8') as dict_file:
             # Loop through each line in the dictionary file [Programming Challenges: Data, Control, and Algorithms, Challenge 2: Spell Checker - Key Concepts]
@@ -53,7 +53,7 @@ def spell_check():
                     normalized_word = word_without_punctuation.lower()
                     
                     # Debugging Techniques (B2.1.4): Uncomment the line below during development to see normalized words [Programming Challenges: Data, Control, and Algorithms, Challenge 2: Spell Checker - Key Concepts [5]].
-                    # print(f"Original: '{word}', Normalized: '{normalized_word}'")
+                    print(f"Original: '{word}', Normalized: '{normalized_word}'")
                     
                     # Check if the normalized word exists in the dictionary (membership testing)
                     if normalized_word in dictionary_words:
