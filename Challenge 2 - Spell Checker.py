@@ -71,30 +71,5 @@ def spell_check():
     # --- 3. Return the total count of correctly spelled words ---
     return correctly_spelled_words_count
 
-# --- Example Usage (for testing the function) ---
-# To test this program, create two text files in the same directory as your Python script:
-#
-# 1. 'dictionary.txt' - each line should contain a valid word. For example:
-#    hello
-#    world
-#    python
-#    programming
-#    challenge
-#    solution
-#    test
-#    computer
-#    science
-#    teacher
-#    student
-#    project
-#
-# 2. 'mystery-text.txt' - containing text to be spell-checked. For example:
-#    Hello, world! This is a Python programming challenge solution.
-#    Python programming is fun. Word, word.
-#    Computer Science is a fascinating project.
-#    My teacher said this is a test.
-#
-# After creating the files, uncomment the lines below to run the function:
-
-# result = spell_check()
-# print(f"\nNumber of correctly spelled words: 
+result = spell_check()
+print(f"\nNumber of correctly spelled words: ", result)
